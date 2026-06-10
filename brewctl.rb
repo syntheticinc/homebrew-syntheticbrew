@@ -5,21 +5,21 @@
 class Brewctl < Formula
   desc "SyntheticBrew engine config-as-code apply tool"
   homepage "https://syntheticbrew.ai"
-  version "0.4.1"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.4.1/brewctl_0.4.1_darwin_amd64.tar.gz"
-      sha256 "fb72da12f5234af4dc5edc39bd62f6f6eb3528599a4b0470824b375e059acd9d"
+      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.5.0/brewctl_0.5.0_darwin_amd64.tar.gz"
+      sha256 "d51b1c9079c6583949a4f60fd91e9a739b4426f997caa2bf29a185f064dec862"
 
       define_method(:install) do
         bin.install "brewctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.4.1/brewctl_0.4.1_darwin_arm64.tar.gz"
-      sha256 "1e4d1b80375beca2cd8e6e7c28f5687906ea4d45d637f8e717d0ba856f085991"
+      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.5.0/brewctl_0.5.0_darwin_arm64.tar.gz"
+      sha256 "c18458c0c7f355f5f4b6b782b1826fc1a8121a0101abcf3ada50650d7faebe4b"
 
       define_method(:install) do
         bin.install "brewctl"
@@ -29,15 +29,15 @@ class Brewctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.4.1/brewctl_0.4.1_linux_amd64.tar.gz"
-      sha256 "0256e0bf9485c168cb7b0edb93e99a7445379e1e969e052f0af3cc34b10a204f"
+      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.5.0/brewctl_0.5.0_linux_amd64.tar.gz"
+      sha256 "4ae15528c98bd67b1f23eedeecf90f855ddcdb617eeacc5317126cb0d9f7777e"
       define_method(:install) do
         bin.install "brewctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.4.1/brewctl_0.4.1_linux_arm64.tar.gz"
-      sha256 "85bbcd0bb82f145b77ca89491e7d99ec2d2220fb177f65a3870c42486bc27e00"
+      url "https://github.com/syntheticinc/syntheticbrew-brewctl/releases/download/v0.5.0/brewctl_0.5.0_linux_arm64.tar.gz"
+      sha256 "c2bf58845b8c53fa6b69f95ecf063c02c9dd6ec4094777773fe60a2bc75969b1"
       define_method(:install) do
         bin.install "brewctl"
       end
